@@ -32,11 +32,11 @@ Function, that will be called, when contents is read and processed. Signature pr
 
 MIT (c) 2014 Vsevolod Strukchinsky
 
-[npm-url]: https://npmjs.org/package/gulp-bh
-[npm-image]: http://img.shields.io/npm/v/gulp-bh.svg?style=flat
+[npm-url]: https://npmjs.org/package/require-or-die
+[npm-image]: http://img.shields.io/npm/v/require-or-die.svg?style=flat
 
-[travis-url]: http://travis-ci.org/floatdrop/gulp-bh
-[travis-image]: http://img.shields.io/travis/floatdrop/gulp-bh.svg?branch=master&style=flat
+[travis-url]: http://travis-ci.org/floatdrop/require-or-die
+[travis-image]: http://img.shields.io/travis/floatdrop/require-or-die.svg?branch=master&style=flat
 
-[depstat-url]: https://david-dm.org/floatdrop/gulp-bh
-[depstat-image]: http://img.shields.io/david/floatdrop/gulp-bh.svg?style=flat
+[depstat-url]: https://david-dm.org/floatdrop/require-or-die
+[depstat-image]: http://img.shields.io/david/floatdrop/require-or-die.svg?style=flat
