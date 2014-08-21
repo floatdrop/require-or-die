@@ -6,6 +6,12 @@ var join = require('path').join;
 
 function fixture(name) { return join(__dirname, 'fixtures', name); }
 
+it('should throw on non existing file', function () {
+    assert.throws(function () {
+        rod(fixture('wtf.js'));
+    });
+});
+
 it('should require common.js file', function (done) {
     rod(fixture('common.js'), function (err, value) {
         assert.ifError(err);
