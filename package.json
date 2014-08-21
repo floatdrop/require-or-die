@@ -1,0 +1,27 @@
+{
+  "name": "require-or-die",
+  "version": "0.0.0",
+  "description": "Require Common.js modules as just js files, that returns value",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha -R spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/floatdrop/require-or-die.git"
+  },
+  "keywords": [
+    "node",
+    "require",
+    "js"
+  ],
+  "author": "Vsevolod Strukchinsky <floatdrop@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/floatdrop/require-or-die/issues"
+  },
+  "homepage": "https://github.com/floatdrop/require-or-die",
+  "devDependencies": {
+    "mocha": "^1.21.4"
+  }
+}
