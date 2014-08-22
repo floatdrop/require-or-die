@@ -6,9 +6,9 @@ var join = require('path').join;
 
 function fixture(name) { return join(__dirname, 'fixtures', name); }
 
-it('should throw on non existing file', function () {
-    assert.throws(function () {
-        rod(fixture('wtf.js'));
+it('should return error in callback on not found files', function () {
+    rod(fixture('wtf.js'), function (err) {
+        assert.ok(err);
     });
 });
 

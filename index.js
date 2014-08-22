@@ -6,7 +6,7 @@ function hasKeys(obj) {
 }
 
 module.exports = function (path, cb) {
-    fs.readFile(require.resolve(path), function (err, content) {
+    fs.readFile(path, function (err, content) {
         if (err) { return cb(err); }
         try {
             var sandbox = {};
