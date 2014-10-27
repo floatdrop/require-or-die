@@ -27,3 +27,21 @@ module.exports = function (path, cb) {
         }
     });
 };
+
+module.exports.sync = function (path) {
+    var content = fs.readFileSync(path);
+
+    var sandbox = {};
+    var empty = {};
+    sandbox.exports = empty;
+    sandbox.module = sandbox;
+    sandbox.global = sandbox;
+
+    var result = run(content, sandbox, path);
+
+    if (hasKeys(sandbox.exports) || sandbox.exports !== empty) {
+        return sandbox.exports;
+    }
+
+    return result;
+};

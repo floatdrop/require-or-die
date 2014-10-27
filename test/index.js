@@ -36,6 +36,11 @@ it('should require js file', function (done) {
     });
 });
 
+it('should require js file in sync', function () {
+    var value = rod.sync(fixture('simple.js'));
+    assert.equal(value, true);
+});
+
 it('should return error on exceptions', function (done) {
     rod(fixture('simple.js'), function (err) {
         assert.ok(err);

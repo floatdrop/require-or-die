@@ -28,6 +28,11 @@ Type: `Function`
 
 Function, that will be called, when contents is read and processed. Signature pretty common: `function (err, value)`.
 
+
+#### require.sync(path)
+
+Same as `require`, but in sync way.
+
 ## License
 
 MIT (c) 2014 Vsevolod Strukchinsky
