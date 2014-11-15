@@ -1,6 +1,6 @@
 {
   "name": "require-or-die",
-  "version": "0.3.0",
+  "version": "1.0.0",
   "description": "Require Common.js modules as just js files, that returns value",
   "main": "index.js",
   "scripts": {
