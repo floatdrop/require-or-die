@@ -16,12 +16,17 @@ rod('./sample.js', function (err, value) {
 
 ### API
 
-#### require(path, callback)
+#### require(path, [options], callback)
 
 ###### path
 Type: `String`
 
 Path to required file (will be resolved by `require.resolve`).
+
+###### options
+Type: `Object`
+
+Options, that will be passed to fs.readFile.
 
 ###### callback
 Type: `Function`

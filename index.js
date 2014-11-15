@@ -5,8 +5,13 @@ function hasKeys(obj) {
     return typeof obj === 'object' && Object.keys(obj).length !== 0;
 }
 
-module.exports = function (path, cb) {
-    fs.readFile(path, function (err, content) {
+module.exports = function (path, opts, cb) {
+    if (!cb) {
+        cb = opts;
+        opts = {};
+    }
+
+    fs.readFile(path, opts, function (err, content) {
         if (err) { return cb(err); }
         try {
             var sandbox = {};
@@ -28,8 +33,8 @@ module.exports = function (path, cb) {
     });
 };
 
-module.exports.sync = function (path) {
-    var content = fs.readFileSync(path);
+module.exports.sync = function (path, opts) {
+    var content = fs.readFileSync(path, opts);
 
     var sandbox = {};
     var empty = {};
